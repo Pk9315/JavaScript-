@@ -1,0 +1,39 @@
+<!DOCTYPE  html>
+<html>
+<head>
+ <style type="text/css">
+  #tt{
+   color: red;
+   font-size: 10px;
+  }
+ </style>
+ <title></title>
+</head>
+<body>
+<script type="text/javascript">
+ function validate()
+ {
+  var name;
+  var x=document.getElementById("ss").value;
+  if(name=="null"|| length.name<7){
+   
+   name="please fill out this filled";
+   
+  }
+  else {
+   name="**valid**";
+  
+  }
+  document.getElementById("tt").innerHTML=name;
+  
+ }
+</script>
+
+<input type="text" id="ss">
+
+<button type="button" onclick="validate()">Submit</button>
+
+<p id="tt"></p>
+ 
+</body>
+</html>
