@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#dd{
+			color: blue;
+			font-size: 20px;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function myfunction(){
+			var x, data;
+			x=document.getElementById("ss").value;
+			if(isNaN(x) || x<1 || x>10){
+				alert("input not valid");
+			} else{
+				alert("inputvalid")
+
+			}
+			document.getElementById("dd")
+		}
+	</script>
+	<form>
+		<input type="text" id="ss">
+		<input type="button" onclick="myfunction()" value="submit">
+	</form>
+	<div id="dd"></div>
+
+</body>
+</html>
